@@ -1,0 +1,420 @@
+.main-cardl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 800px;
+  /* main-cardl cssanimation sequence fadeInBottom*/
+}
+
+.cssanimation,
+.cssanimation span {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.main-card2 {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 800px;
+}
+
+.cssanimation span {
+  display: inline-block
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/*.main-cardl {margin-top:9%;}*/
+.content-l {
+  padding: 0px 15px !important;
+  border-top: transparent;
+  text-align: left;
+  -webkit-animation: show 1s;
+  animation: show 1s;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -o-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-top: -8px;
+  background: #f5f6fb;
+  text-align: center !important;
+}
+
+.loginCard {
+  width: 100%;
+  padding: 0rem;
+  background-color: #f5f6fb;
+}
+
+.login-bg {
+  position: relative;
+  float: left;
+}
+
+.userarea {
+  background: #ffffff;
+  float: left;
+}
+
+.col-direction {
+  float: left;
+}
+
+.btn-blue {
+  background: #2e6ce4 !important;
+  width: 100%;
+  color: #fff !important;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 6px 16px;
+  display: block;
+  font-size: 16px;
+}
+
+.btn-blue:hover {
+  background: #4d8efb !important;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cox-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.font-weight-bold {
+  font-weight: 600 !important;
+  font-size: 26px !important;
+  text-align: center;
+  color: #000000;
+  padding: 0 50px;
+  line-height: 35px;
+}
+
+.mt-logo-l {
+  margin-top: 6rem !important;
+}
+
+.mt-logo-cp {
+  margin-top: 3rem !important;
+}
+
+.mt-reset-r {
+  margin-top: 5rem !important;
+}
+
+.content {
+  color: #000000;
+  font-size: 0.99rem;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.mt-logo {
+  margin-top: 6rem;
+}
+
+.card0 {
+  box-shadow: 0px 4px 8px 0px #757575;
+  -webkit-box-shadow: 0px 0px 6px 0px #757575;
+  -moz-box-shadow: 0px 0px 6px 0px #757575;
+  -ms-box-shadow: 0px 0px 6px 0px #757575;
+}
+
+.support {
+  color: #2e6ce4;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.support:hover {
+  color: #ffba00;
+}
+
+.txt-forgot {
+  color: #2e6ce4;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.txt-forgot:hover {
+  color: #ffba00;
+}
+
+.log-txt-h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+}
+
+.mt-reset-logo {
+  margin-top: 8rem;
+}
+
+/* Hide default checkbox */
+label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox container */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 23px;
+  background-color: #ffffff;
+  border: 1px solid #AFB4C5;
+  border-radius: 3px;
+  margin-left: -5px;
+}
+
+/* When the checkbox is checked, add a blue background */
+label input:checked~.checkmark {
+  background-color: #ffffff;
+  border: 1px solid #00d084;
+}
+
+/* Create the checkmark/circle (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+label input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark */
+label .checkmark:after {
+  left: 10px;
+  top: -4px;
+  width: 7px;
+  height: 17px;
+  border: solid #00d084;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkmark {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  border: 1px solid #AFB4C5;
+}
+
+/* Add border radius for the radio button */
+.circle {
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a background color */
+label:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+label input:checked~.checkmark {
+  background-color: transparent;
+  border: 1px solid #00d084;
+}
+
+/* Create the checkmark/circle (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+label input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark */
+label .checkmark:after {
+  left: 10px;
+  top: -4px;
+  width: 7px;
+  height: 17px;
+  border: solid #00d084;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Style the radio button circle */
+label .circle:after {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: #00d084;
+  border-radius: 50%;
+  left: 28%;
+  top: 28%;
+}
+
+/* Radio Checkbox*/
+label.input {
+  margin-left: 32px;
+  cursor: pointer;
+}
+
+.eyeview {
+  position: relative;
+  font-size: 20px;
+  line-height: 22px;
+  color: #b5b4b4;
+  width: 30px;
+  height: 24px;
+  float: right;
+  z-index: 99;
+  cursor: pointer;
+  margin-top: -30px;
+}
+
+.confeyeview {
+  position: relative;
+  font-size: 20px;
+  line-height: 22px;
+  color: #b5b4b4;
+  width: 30px;
+  height: 24px;
+  float: right;
+  z-index: 99;
+  cursor: pointer;
+  margin-top: -49px;
+}
+
+.confeyeview:hover {
+  color: #2E6CE4;
+}
+
+.eyeview:hover {
+  color: #2E6CE4;
+}
+
+.progress-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-image: linear-gradient(to right, #2E68E4, #80D5F9);
+  /*background-color: #033c73;*/
+  -webkit-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+
+.progress .progress-bar:last-child {
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+}
+
+.rembemberme {
+  display: inline-block
+}
+
+.mobsect {
+  width: auto;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  .main-cardl {
+    position: relative;
+    top: -20px;
+    margin: 0px auto;
+    left: 0px;
+    transform: translateX(0%);
+    width: 96%;
+  }
+
+  .mt-logo-l {
+    margin-top: 4rem !important;
+  }
+
+  .content-l {
+    padding: 0px 0px 30px 0px !important;
+  }
+
+  .rembemberme {
+    display: none;
+  }
+
+  .mobsect {
+    margin-top: -7px;
+    display: block;
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  .app-main__inner {
+    padding: 0px 20px !important;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1180px) {
+  .main-cardl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 600px;
+  }
+
+  .mt-logo-l {
+    margin-top: 4.5rem !important;
+  }
+
+  .content-l {
+    margin-bottom: 4rem;
+  }
+}

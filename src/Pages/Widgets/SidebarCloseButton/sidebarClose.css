@@ -1,0 +1,26 @@
+.commonStyle {
+  margin-top: 17%;
+  position: fixed;
+  font-size: 25px;
+  color: rgb(46, 108, 228);
+  font-weight: 500;
+  background: rgb(245, 246, 251);
+  width: 24px;
+  padding: 13px 1px 14px;
+  z-index: 99;
+}
+.openStyle {
+  border-right: none;
+  border-top-left-radius: 34px;
+  border-bottom-left-radius: 34px;
+  margin-left: 256px;
+  cursor: pointer;
+}
+
+.closeStyle {
+  border-left: none;
+  border-top-right-radius: 34px;
+  border-bottom-right-radius: 34px;
+  margin-left: 80px;
+  cursor: pointer;
+}

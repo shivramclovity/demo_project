@@ -1,0 +1,62 @@
+.datepicker-control-section {
+  max-width: 246px;
+  margin: 30px auto;
+  padding-top: 50px;
+}
+.rmdp-wrapper {
+  width: 256px !important;
+}
+.e-date-wrapper:not(.e-filled) .e-date-icon.e-icons {
+  color: green;
+}
+.datepicker-control-section {
+  max-width: 246px;
+  margin: 30px auto;
+  padding-top: 50px;
+}
+
+.e-date-wrapper:not(.e-filled) .e-date-icon.e-icons {
+  color: green;
+}
+.rmdp-right i {
+  margin-right: 3px;
+  transform: rotate(-315de) !important;
+  -webkit-transform: rotate(-315deg) !important;
+  margin-top: 0px !important;
+}
+.rmdp-left i {
+  margin-left: 383px !important;
+  transform: rotate(224deg) !important;
+  -webkit-transform: rotate(224deg) !important;
+  margin-top: 6px !important;
+}
+
+.rmdp-header-values {
+  color: #000;
+  margin: 0 !important;
+  text-align: left !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+.rmdp-day.rmdp-selected span:not(.highlight) {
+  background-color: #ffba00 !important;
+  box-shadow: 0 0 3px #8798ad;
+  color: #000000 !important;
+}
+.rmdp-arrow {
+  border: solid #0074d9;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  height: 9px !important;
+  margin-top: 5px;
+  padding: 4px !important;
+  width: 9px !important;
+}
+.rmdp-arrow-container:hover {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.rmdp-arrow-container:hover .rmdp-arrow {
+  border: solid #0074d9 !important;
+  border-width: 0 2px 2px 0 !important;
+}
