@@ -1,0 +1,25 @@
+# This config is equivalent to both the '.circleci/extended/orb-free.yml' and the base '.circleci/config.yml'
+version: 2.1
+
+# Orbs are reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
+# See: https://circleci.com/docs/2.0/orb-intro/
+orbs:
+  docker: circleci/docker@1.7.0
+executors:
+  my-custom-executor:
+    docker:
+      - image: cimg/base:stable
+        auth:
+          # ensure you have first added these secrets
+          username: $DOCKER_HUB_USER
+          password: $DOCKER_HUB_PASSWORD
+jobs:
+ build:
+   machine:
+    image: ubuntu-2204:2022.04.2
+   steps:
+     - checkout
+     - run: docker build -t $DOCKER_HUB_USER/circleapp:$CIRCLE_BRANCH .
+     - run: docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PASSWORD docker.io
+     - run: docker push $DOCKER_HUB_USER/circleapp:$CIRCLE_BRANCH
+
